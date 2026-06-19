@@ -1,0 +1,56 @@
+{
+  "name": "@enclave/verify-shared",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./account": {
+      "types": "./dist/account.d.ts",
+      "import": "./dist/account.js"
+    },
+    "./constants": {
+      "types": "./dist/constants.d.ts",
+      "import": "./dist/constants.js"
+    },
+    "./recoverAuthFromUrl": {
+      "types": "./dist/recoverAuthFromUrl.d.ts",
+      "import": "./dist/recoverAuthFromUrl.js"
+    },
+    "./auth/*": {
+      "types": "./dist/auth/*.d.ts",
+      "import": "./dist/auth/*.js"
+    },
+    "./stripe/*": {
+      "types": "./dist/stripe/*.d.ts",
+      "import": "./dist/stripe/*.js"
+    },
+    "./supabase/*": {
+      "types": "./dist/supabase/*.d.ts",
+      "import": "./dist/supabase/*.js"
+    },
+    "./verify/*": {
+      "types": "./dist/verify/*.d.ts",
+      "import": "./dist/verify/*.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.8",
+    "next": "^14.2.29",
+    "stripe": "^22.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "next": "^14.2.29",
+    "typescript": "^5.8.3"
+  }
+}

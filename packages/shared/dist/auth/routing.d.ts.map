@@ -1,0 +1,1 @@
+{"version":3,"file":"routing.d.ts","sourceRoot":"","sources":["../../src/auth/routing.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,mCAAmC,CAAC;AAE3E,wBAAgB,8BAA8B,CAC5C,WAAW,EAAE,iBAAiB,GAC7B,MAAM,CAIR;AAED,wBAAgB,qBAAqB,CACnC,aAAa,EAAE;IAAE,YAAY,EAAE,iBAAiB,CAAA;CAAE,GAAG,IAAI,GACxD,MAAM,CAMR"}

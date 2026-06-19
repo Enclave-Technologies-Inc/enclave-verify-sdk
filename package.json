@@ -1,0 +1,14 @@
+{
+  "name": "enclave-verify-sdk-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @enclave/verify-sdk && npm run build -w @enclave/verify-shared",
+    "sdk:build": "npm run build -w @enclave/verify-sdk",
+    "shared:build": "npm run build -w @enclave/verify-shared",
+    "keygen": "npm run keygen -w @enclave/verify-sdk"
+  }
+}
