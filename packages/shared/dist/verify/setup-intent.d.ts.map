@@ -1,1 +1,0 @@
-{"version":3,"file":"setup-intent.d.ts","sourceRoot":"","sources":["../../src/verify/setup-intent.ts"],"names":[],"mappings":"AAMA,MAAM,MAAM,uBAAuB,GAC/B;IAAE,EAAE,EAAE,IAAI,CAAC;IAAC,YAAY,EAAE,MAAM,CAAA;CAAE,GAClC;IAAE,EAAE,EAAE,KAAK,CAAC;IAAC,MAAM,EAAE,MAAM,CAAA;CAAE,CAAC;AAElC,wBAAsB,yBAAyB,IAAI,OAAO,CAAC,uBAAuB,CAAC,CAiDlF"}

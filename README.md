@@ -1,24 +1,46 @@
-# Enclave Verify SDK
+# @enclave/verify-sdk
 
-Published npm packages for Enclave Verify integrators and apps.
+Post-quantum verifiable credentials for **Enclave Verify**. Open-source (AGPL-3.0-or-later) cryptography: SHAKE256 claim hashing, Merkle selective disclosure, and ML-DSA-65 (FIPS 204) signatures.
 
-| Package | Description |
-|---------|-------------|
-| `@enclave/verify-sdk` | Post-quantum credential core (SHAKE256, Merkle, ML-DSA-65) |
-| `@enclave/verify-shared` | Shared Supabase, Stripe, and Verify app utilities |
+## Enclave Verify repos
 
-Source of truth: [enclave-verify](https://github.com/Enclave-Verify/enclave-verify) monorepo (`packages/sdk`, `packages/shared`).
+| Repo | Org | Role |
+|------|-----|------|
+| **enclave-verify** | Enclave-Verify | App (web + native) |
+| **enclave-verify-sdk** | Enclave-Verify | This package — AGPL crypto |
+| **enclave-verify-api** | Enclave-Encrypt | Supabase edge functions + REST API |
+| **enclave-verify-landing** | Enclave-Verify | Marketing site |
 
-## Build
+App and API both depend on this SDK so crypto can be audited in one place.
+
+## Install
+
+```bash
+npm install @enclave/verify-sdk
+```
+
+Monorepo sibling (local dev):
+
+```json
+"@enclave/verify-sdk": "file:../enclave-verify-sdk"
+```
+
+## Usage
+
+```ts
+import { issueCredential } from "@enclave/verify-sdk/credential/issue";
+import { verifyCredential } from "@enclave/verify-sdk/verify/verify";
+```
+
+## Development
 
 ```bash
 npm install
 npm run build
+npm run keygen
+npm test
 ```
 
-## Publish
+## License
 
-```bash
-npm publish -w @enclave/verify-sdk --access public
-npm publish -w @enclave/verify-shared --access public
-```
+AGPL-3.0-or-later — see [LICENSE](./LICENSE). Contact Enclave for commercial licensing.

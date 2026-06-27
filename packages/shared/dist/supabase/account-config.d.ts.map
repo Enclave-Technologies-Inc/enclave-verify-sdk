@@ -1,1 +1,0 @@
-{"version":3,"file":"account-config.d.ts","sourceRoot":"","sources":["../../src/supabase/account-config.ts"],"names":[],"mappings":"AAOA,wBAAgB,uBAAuB,IAAI,OAAO,CAEjD;AAED,wBAAgB,wBAAwB,IAAI;IAAE,GAAG,EAAE,MAAM,CAAC;IAAC,OAAO,EAAE,MAAM,CAAA;CAAE,CAQ3E"}
