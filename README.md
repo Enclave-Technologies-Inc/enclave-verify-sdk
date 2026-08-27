@@ -6,10 +6,10 @@ Post-quantum verifiable credentials for **Enclave Verify**. Open-source (AGPL-3.
 
 | Repo | Org | Role |
 |------|-----|------|
-| **enclave-verify** | Enclave-Verify | App (web + native) |
-| **enclave-verify-sdk** | Enclave-Verify | This package — AGPL crypto |
-| **enclave-verify-api** | Enclave-Encrypt | Supabase edge functions + REST API |
-| **enclave-verify-landing** | Enclave-Verify | Marketing site |
+| **enclave-verify** | Enclave-Technologies-Inc-Private | App (web + native) |
+| **enclave-verify-sdk** | Enclave-Technologies-Inc | This package — AGPL crypto |
+| **enclave-verify-api** | Enclave-Technologies-Inc-Private | Supabase edge functions + REST API |
+| **enclave-verify-landing** | Enclave-Technologies-Inc-Private | Marketing site |
 
 App and API both depend on this SDK so crypto can be audited in one place.
 
